@@ -1,0 +1,28 @@
+.navbar{
+    margin: 0;
+    background-color: black;
+    height: 20vh;
+    
+}
+h1{
+    color:floralwhite;
+    font-family:Georgia;
+    font-size:2rem;
+
+}
+
+.lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    cursor: pointer;
+}
+
+
+.itemList{
+    font-size: 1.2rem;
+    color: white;
+    list-style: none;
+    
+}
