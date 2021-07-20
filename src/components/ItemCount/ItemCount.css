@@ -1,0 +1,51 @@
+.cart{
+    height: 4rem;
+    width: 4rem;
+    border: royalblue;
+    color:black;
+    
+}
+.title{
+    height: 3rem;
+    width: 12rem;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 1rem;
+    border: 2px solid red;
+    background-color:white;
+}
+.remove{
+    height: 3rem;
+    font-size: 2rem;
+    width: 3rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    border: 2px solid green;
+}
+.add{
+    height: 3rem;
+    font-size: 2rem;
+    width: 3rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    border: 2px solid green;
+}
+.cantidad{
+    margin: 1rem;
+}
+.btn1{
+    height: 4rem;
+    font-size: 2rem;
+    width: 10rem;
+    padding-left: 1rem;
+}
+.btn2{
+    color:white;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    background-color:rgba(14, 14, 212, 0.952);
+    height: 5rem;
+    width: 12rem;
+    border-radius: 0.5rem;
+    border: 2px solid ;
+}
