@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './ItemCount.css';
 
-function ItemCount({ initial, stock, onAdd }) {
+function ItemCount({ initial, stock, onAdd, item }) {
   const [cantidad, setCantidad] = useState(1);
   const handleAdd = () => {
     if (cantidad < stock) {
@@ -23,7 +23,7 @@ function ItemCount({ initial, stock, onAdd }) {
         <span className="cantidad"> {cantidad}</span>
         <button className='add'onClick={handleAdd}> + </button>
       </div>
-      <button className="btn2" onClick={() => onAdd(cantidad)}>
+      <button className="btn2" onClick={() => onAdd(item)}>
         Add to cart
       </button>
     </>

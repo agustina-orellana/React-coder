@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
+import ItemCount from "../ItemCount/ItemCount";
 
 function ItemDetail({ item }) {
-  console.log(item);
-
+  const [detail,setDetail] = useState([]);
+  const onAdd = (item) =>{
+    setDetail(item)
+  }
+  let initial = 1;
   return (
     <>
     <h1 style={{color:'black'}}>ITEM DETAIL</h1>
@@ -12,7 +16,10 @@ function ItemDetail({ item }) {
           <h4>{i.price}</h4>
           <img src={i.url} />
         </div>
-      ))}
+        
+        ))}
+      <ItemCount initial={initial} stock={item[0].stock} onAdd={onAdd} item={item[0]} />
+        <button>Terminar la compra</button>
     </>
   );
 }
